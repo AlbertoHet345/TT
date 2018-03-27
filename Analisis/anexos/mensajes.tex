@@ -1,0 +1,113 @@
+\chapter{Mensajes del sistema}
+\label{chapter:mensajes}
+\cdtLabel{apendice:Mensajes}{}
+
+
+%===========================  MSG1 ==================================
+\begin{mensaje}{MSG1}{Elementos No Disponibles}{Error \msgError}
+	\item[Canal:] Sistema
+    \item[Propósito:] Alertar al actor que no existen elementos en el sistema por mostrar.
+    \item[Redacción:] ¡No hay $<ELEMENTOS>$ para mostrarte!
+    \item[Parámetros:] ELEMENTOS: Información de la cual se requiere para concluir un proceso
+    \item[Ejemplo:] ¡No hay registros de aspirantes para mostrarte!
+\end{mensaje}
+
+%============================== MSG2 =================================
+\begin{mensaje}{MSG2}{Elemento No Disponible}{Error \msgError}
+	\item[Canal:] Sistema
+    \item[Propósito:] Alertar al actor que el elemento que se desea ver no existe o no está disponible en el sistema
+    \item[Redacción:] ¡Este/a $<ELEMENTO>$ no esta disponible aún!
+    \item[Parámetros:] ELEMENTO:Información de un registro en específico de la cual se requiere para concluir un proceso
+    \item[Ejemplo:] ¡Esta boleta no esta disponible aún!
+\end{mensaje}
+
+%===========================  MSG3 ==================================
+\begin{mensaje}{MSG3}{Operación Exitosa}{Confirmación \msgConfirm}
+	\item[Canal:] Sistema
+    \item[Propósito:] Informar al actor que la operación que se le ha solicitado al sistema se llevo a cabo exitosamente.
+    \item[Redacción:] La $<OPERACION>$ se llevo a cabo correctamente.
+    \item[Parámetros:] OPERACION: Actividad que el actor debe realizar.
+    \item[Ejemplo:] La reincripción se llevo a cabo correctamente.
+\end{mensaje}
+
+%============================== MSG4 =================================
+\begin{mensaje}{MSG4}{Operación Fallida}{Error \msgError}
+	\item[Canal:] Sistema
+    \item[Propósito:] Informar al actor que la operación solicitada al sistema no pudo llevarse a cabo.
+    \item[Redacción:] Error, $<ERROR\_ENCONTRADO>$.
+    \item[Parámetros:] ERROR\_ENCONTRADO: Error que el sistema identificó al intentar realizar la operación.
+    \item[Ejemplo:] Error, No hay conexión al sistema.(Base de Datos)
+\end{mensaje}
+
+%============================== MSG5 =================================
+\begin{mensaje}{MSG5}{Duplicado de Información}{Error \msgError}
+	\item[Canal:] Sistema
+    \item[Propósito:] Indicar al actor que ya existe un elemento con la misma información que desea ingresar.
+    \item[Redacción:] ¡Ya existe un/a $<ELEMENTO>$ con la misma información!
+    \item[Parámetros:] ELEMENTO: Parte de la información que esta duplicada
+    \item[Ejemplo:]¡Ya existe una boleta con la misma información!
+\end{mensaje}
+
+%============================== MSG6 =================================
+\begin{mensaje}{MSG6}{Información Incorrecta}{Error  \msgError}
+	\item[Canal:] Sistema
+	\item[Propósito:] Informar al actor que faltan datos o que los datos proporcionados son érroneos dentro de un formulario.
+	\item[Redacción 1:] Falta un dato en el formulario.
+	\item[Redacción 2:] La información proporcionada es incorrecta.
+	\item[Parámetros:] Ninguno
+	\item[Ejemplo:] --
+\end{mensaje}
+
+%============================== MSG7 =================================
+\begin{mensaje}{MSG7}{Operación por Atender}{Notificación \msgNotif}
+	\item[Canal:] Correo / SMS / WhatsApp
+	\item[Propósito:] Informar al actor que existen operaciones que requieren de su atención o supervisión para llevarse a cabo.
+	\item[Redacción:] Calmécac te notifica que hay $<ELEMENTOS>$ que requieren de tu atención.
+	\item[Parámetros:] ELEMENTOS: Aquella información que el actor debe supervisar o atender.
+	\item[Ejemplo:] Calmécac te notifica que hay registros de aspirantes que requieren de tu atención.
+\end{mensaje}
+
+
+
+%===============================MSG8=============================
+
+\begin{mensaje}{MSG8}{Límite de Tiempo}{Notificación \msgNotif}
+	\item[Canal:] Correo / SMS / WhatsApp
+	\item[Propósito:] Informar al actor que el límite de tiempo para que realize una operación está por agotarse.
+	\item[Redacción:]¡ALERTA! Recuerda que debes realizar la $<OPERACION>$ antes del $<TIEMPO>$
+	\item[Parámetros:]\cdtEmpty
+		\begin{itemize}
+			\item OPERACION: Tarea a realizar por el actor
+			\item TIEMPO: Fecha para la cual el límite 
+		\end{itemize}
+	\item[Ejemplo:] ¡ALERTA! Recuerda que debes realizar la reinscripción antes del 10 de Mayo del 2017.
+\end{mensaje}
+
+%===============================MSG9=============================
+
+\begin{mensaje}{MSG9}{Cierre de Operación}{Notificación \msgNotif}
+	\item[Canal:] Correo / SMS / WhatsApp
+	\item[Propósito:] Informar al actor que el límite de tiempo para que realize una operación se ha agotado y sugiere realizar algo para poder llevarla a cabo.
+	\item[Redacción:]¡ALERTA! El tiempo para realizar la $<OPERACION>$ se ha acabado. Calmécac te sugiere $<SUGERENCIA>$.
+	\item[Parámetros:]\cdtEmpty
+	\begin{itemize}
+		\item OPERACION: Tarea a realizar por el actor
+		\item SUGERENCIA: Proceso u operación que el actor debe realizar para poder concluir una actividad.
+	\end{itemize}
+	\item[Ejemplo:] ¡ALERTA! El tiempo para realizar la reinscripción se ha acabado. Calmécac te sugiere ir al Departamento de Gestión Escolar para poder reinscribirte.
+\end{mensaje}
+
+
+
+%===============================MSG10=============================
+
+
+\begin{mensaje}{MSG10}{Recomendación para revisar configuración de servicios web}{Notificación \msgNotif}
+	\item[Canal:] Correo / SMS / WhatsApp
+	\item[Propósito:] Informar al actor que la es necesario revisar la configuración actual de los serivicios web, ya que se acerca un proceso de carga de datos al sistema.
+	\item[Redacción:] Recomendación del Calmecac, La $<OPERACION>$ ha concluido, y se sugiere que se recibe la configuración de los serivicios web del Calmecac.
+	\item[Parámetros:] \cdtEmpty
+	\begin{itemize}
+		\item OPERACION: Tarea realizada por el Politécnico.
+	\end{itemize}
+\end{mensaje}

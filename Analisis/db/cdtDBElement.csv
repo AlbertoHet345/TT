@@ -1,0 +1,44 @@
+id,type,name,status,version,author
+Alta,Termino,Alta,NA,NA,NA
+AlumnoRegistradoEnSIRCEI,Termino,Alumno Registrado en SIRCEI,NA,NA,NA
+AntecedentesDeIngreso,Termino,Antecedentes de Ingreso,NA,NA,NA
+AntecedentesDeTrayectoria,Termino,Antecedentes de Trayectoria,NA,NA,NA
+AspiranteAceptado,Termino,Aspirante Aceptado,NA,NA,NA
+AspiranteAExaminar,Termino,Aspirante a Examinar,NA,NA,NA
+Boleta,Termino,Boleta,NA,NA,NA
+Cadena,Termino,Cadena,NA,NA,NA
+CicloEscolar,Termino,Ciclo Escolar,NA,NA,NA
+Convocatoria,Termino,Convocatoria,NA,NA,NA
+CredencialDeAlumno,Termino,Credencial de Alumno,NA,NA,NA
+Entero,Termino,Entero,NA,NA,NA
+EstructuraAcademica,Termino,Estructura Acad\IeC {\'e}mica,NA,NA,NA
+ETS,Termino,Examen a T\IeC {\'\i }tulo De Suficiencia,NA,NA,NA
+ExpedienteDelAspirante,Termino,Expediente del Aspirante,NA,NA,NA
+Fecha,Termino,Fecha,NA,NA,NA
+FechaCorta,Termino,Fecha corta,NA,NA,NA
+FechaLarga,Termino,Fecha Larga,NA,NA,NA
+Frase,Termino,Frase,NA,NA,NA
+HojaDeResultadoDelExamenDeAdmision,Termino,Hoja de Resultado del Examen de Admisi\IeC {\'o}n,NA,NA,NA
+Incidencia,Termino,Incidencia,NA,NA,NA
+Nombramiento,Termino,Nombramiento,NA,NA,NA
+OficioDeAlumnoAceptado,Termino,Oficio de Alumno Aceptado,NA,NA,NA
+PeriodoEscolar,Termino,Periodo Escolar,NA,NA,NA
+Preboleta,Termino,Preboleta,NA,NA,NA
+ProcesoDeAdmision,Termino,Proceso de Admisi\IeC {\'o}n,NA,NA,NA
+ProgramaAcademico,Termino,Programa Acad\IeC {\'e}mico,NA,NA,NA
+RUAA,Termino,Registro \IeC {\'U}nico de Actividades Acad\IeC {\'e}micas ,NA,NA,NA
+TrayectoriaEscolar,Termino,Trayectoria Escolar,NA,NA,NA
+UnidadDeAprendizaje,Termino,Unidad de Aprendizaje,NA,NA,NA
+ValidacionDeInscripcion,Termino,Validaci\IeC {\'o}n de Inscripci\IeC {\'o}n,NA,NA,NA
+Kardex,Termino,Kardex,NA,NA,NA
+CalendarioAcademico,Termino,Calendario Acad\IeC {\'e}mico,NA,NA,NA
+RCITPAIPN,Termino,Reglamento de las Condiciones Interiores de Trabajo del Personal Acad\IeC {\'e}mico del IPN,NA,NA,NA
+Modalidad,Termino,Modalidad Educativa,NA,NA,NA
+PlanDeEstudios,Termino,Plan de Estudios,NA,NA,NA
+Horario,Termino,Horario,NA,NA,NA
+ExpedienteAcademico,Termino,Expediente Acad\IeC {\'e}mico,NA,NA,NA
+HistorialAcademico,Termino,Historial Acad\IeC {\'e}mico,NA,NA,NA
+DictamenDeCategoria,Termino,Dict\IeC {\'a}men de Categor\IeC {\'\i }a,NA,NA,NA
+BR100,Regla de Negocio,Recibo del Estudiante por inscripci\IeC {\'o}n a Seminario.,NA,NA,NA
+ciudadano,Actor,Ciudadano,NA,NA,NA
+CU25,Caso de uso,Configurar alertas s\IeC {\'\i }smicas,NA,NA,NA
